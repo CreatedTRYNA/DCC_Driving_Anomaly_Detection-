@@ -4,7 +4,7 @@ import torch.nn.functional as F
 import torchvision
 import math
 from functools import partial
-from ssmctb.torch_ssmctb_3d import SSMCTB
+
 __all__ = [
     'ResNet', 'resnet10', 'resnet18', 'resnet34', 'resnet50', 'resnet101',
     'resnet152', 'resnet200'
@@ -227,7 +227,7 @@ class ResNet(nn.Module):
         self.avgpool = nn.AvgPool3d(
             (last_duration, last_size, last_size), stride=1)
         # self.maxpool1 = nn.MaxPool3d(kernel_size=(last_duration, last_size, last_size), stride=1)
-        self.ssmctb3d = SSMCTB(channels=128)
+        # self.ssmctb3d = SSMCTB(channels=128)
         for m in self.modules():
             if isinstance(m, nn.Conv3d):
                 m.weight = nn.init.kaiming_normal_(m.weight, mode='fan_out')
