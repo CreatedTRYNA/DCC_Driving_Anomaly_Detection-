@@ -6,7 +6,8 @@ Code for Paper: “Driving Behavior Anomaly Detection Model Based on Dual-Stream
 代码中使用到的预训练权重：链接：https://pan.baidu.com/s/1u-u2SKDi43NSzTR1fyk0Xw 提取码：qgda 
 请将权重下载之后添加到premodels文件夹中
 
-环境配置在requirement.txt中，可能需要再补充个别包，使用python3.8
+环境配置在requirement.txt中，可能需要再补充个别包
+使用python3.8，torch 1.12.1 torchvision 0.13.1 torchaudio 0.12.1+cu113
 
 当准备工作完成之后，需要修改main中的root_path，将DAD数据集所在目录地址替换即可
 
