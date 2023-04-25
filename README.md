@@ -19,3 +19,5 @@ device可以根据自身配置设置，支持多卡训练
 其他参数可以不需要调整
 
 最后使用 python main.py 即可训练
+
+非常感谢 https://github.com/okankop/Driver-Anomaly-Detection 的开源，我的代码解决了源代码中内存溢出的问题，也增加了部分log内容
