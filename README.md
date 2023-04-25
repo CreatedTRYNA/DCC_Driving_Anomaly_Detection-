@@ -3,6 +3,7 @@ Code for Paper: “Driving Behavior Anomaly Detection Model Based on Dual-Stream
 
 论文使用的数据集在：链接：https://pan.baidu.com/s/1qVAXj82gkw82hbyb3kDoCg 提取码：8hgs 
 （解压时候可能存在错误，请记录下对应的错误图片，将相邻的图片进行复制重命名替代即可，大约有4张错误图像）
+
 代码中使用到的预训练权重：链接：https://pan.baidu.com/s/1u-u2SKDi43NSzTR1fyk0Xw 提取码：qgda 
 请将权重下载之后添加到premodels文件夹中
 
