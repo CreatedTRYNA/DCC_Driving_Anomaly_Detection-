@@ -432,7 +432,10 @@ if __name__ == '__main__':
         if not os.path.exists(score_folder):
             os.makedirs(score_folder)
         args.pre_train_model = False
-
+        '''
+        #### if you want to test your modified code please download DAD dataset, placing the weights to the right path
+        and use this part to calculate the sim score###
+        #### 如果你想要test你的模型，请下载DAD数据集，并且将自己的模型权重放到正确的路径中并且用这部分代码去计算sim score###
         model_front_d = generate_model(args)
         model_front_ir = generate_model(args)
         model_top_d = generate_model(args)
@@ -654,12 +657,12 @@ if __name__ == '__main__':
                                               args.use_cuda)
         np.save(os.path.join(args.normvec_folder, 'normal_vec_top_ir.npy'), normal_vec_top_ir.cpu().numpy())
 
-         #### if you want to test your modified code please use this function to calculate the sim score###
+        
         # cal_score(model_front_d, model_front_ir, model_top_d, model_top_ir,
         #           normal_vec_front_d, normal_vec_front_ir, normal_vec_top_d, normal_vec_top_ir,
         #           test_loader_front_d, test_loader_front_ir,test_loader_top_d,
         #           test_loader_top_ir, score_folder, args.use_cuda)
-        ###################################################################################################
+        '''
 
         gt = get_fusion_label(os.path.join(args.root_path, 'LABEL.csv'))
 
