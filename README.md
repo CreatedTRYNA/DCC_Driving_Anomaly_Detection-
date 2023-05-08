@@ -25,6 +25,7 @@ device可以根据自身配置设置，支持多卡训练
 
 # Test model
 我已经将计算好的score上传，因此不需要权重以及数据集就可以进行test
+
 使用 python main.py --mode test
 
 非常感谢 https://github.com/okankop/Driver-Anomaly-Detection 的开源，我的代码解决了源代码中内存溢出的问题，也增加了部分log内容
