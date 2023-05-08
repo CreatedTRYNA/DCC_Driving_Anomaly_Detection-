@@ -658,10 +658,10 @@ if __name__ == '__main__':
         np.save(os.path.join(args.normvec_folder, 'normal_vec_top_ir.npy'), normal_vec_top_ir.cpu().numpy())
 
         
-        # cal_score(model_front_d, model_front_ir, model_top_d, model_top_ir,
-        #           normal_vec_front_d, normal_vec_front_ir, normal_vec_top_d, normal_vec_top_ir,
-        #           test_loader_front_d, test_loader_front_ir,test_loader_top_d,
-        #           test_loader_top_ir, score_folder, args.use_cuda)
+        cal_score(model_front_d, model_front_ir, model_top_d, model_top_ir,
+                  normal_vec_front_d, normal_vec_front_ir, normal_vec_top_d, normal_vec_top_ir,
+                  test_loader_front_d, test_loader_front_ir,test_loader_top_d,
+                  test_loader_top_ir, score_folder, args.use_cuda)
         '''
 
         #gt = get_fusion_label(os.path.join(args.root_path, 'LABEL.csv'))
