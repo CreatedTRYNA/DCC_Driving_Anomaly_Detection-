@@ -157,7 +157,7 @@ def train(train_normal_loader, train_anormal_loader, model_mtv, nce_average,
         model_mtv.train()
 
         # ===============update meters ===============
-        losses.update(loss.item(), 4830)
+        losses.update(loss.item(), outs.size(0))
         # prob_meter.update(probs.item(), outs.size(0))
 
         # =================logging=====================
