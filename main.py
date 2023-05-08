@@ -664,8 +664,8 @@ if __name__ == '__main__':
         #           test_loader_top_ir, score_folder, args.use_cuda)
         '''
 
-        gt = get_fusion_label(os.path.join(args.root_path, 'LABEL.csv'))
-
+        #gt = get_fusion_label(os.path.join(args.root_path, 'LABEL.csv'))
+        gt = get_fusion_label('LABEL.csv'))
         hashmap = {'top_d': 'Top(D)',
                    'top_ir': 'Top(IR)',
                    'fusion_top': 'Top(DIR)',
