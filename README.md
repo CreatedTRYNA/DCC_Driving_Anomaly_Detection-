@@ -16,7 +16,7 @@ Modify the 'view' to train 4 different views
 
 'batch_size' can be set according to your own devices, the default batch_size is the best parameter configuration
 
-'device' can be configured according to their own Settings, support multi-gpu training
+'device' can be configured according to your own Settings, support multi-gpu training
 
 Other main ArgumentParser do not need to be adjusted
 
