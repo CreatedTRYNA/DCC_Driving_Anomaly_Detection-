@@ -1,31 +1,31 @@
 # DCC_Driving_Anomaly_Detection-
-Code for Paper: “Driving Behavior Anomaly Detection Model Based on Dual-Stream Contrastive Learning and Cross Attention Mechanism”
+Code for Paper: “Dual-stream Model Combining Spatio-Temporal and Appearance Features for Anomaly Driving Action Detection”
 
-论文使用的数据集在：链接：https://pan.baidu.com/s/1qVAXj82gkw82hbyb3kDoCg 提取码：8hgs 
-（解压时候可能存在错误，请记录下对应的错误图片，将相邻的图片进行复制重命名替代即可，大约有4张错误图像）
+The DAD dataset used in this work：https://pan.baidu.com/s/1qVAXj82gkw82hbyb3kDoCg code：8hgs 
+（There may be an error during unzip. Please record the corresponding error image, copy and rename the adjacent image to replace it. There are about 4 wrong images）
 
-代码中使用到的预训练权重：链接：https://pan.baidu.com/s/1u-u2SKDi43NSzTR1fyk0Xw 提取码：qgda 
-请将权重下载之后添加到premodels文件夹中
+The pre-training weights used in the code：https://pan.baidu.com/s/1u-u2SKDi43NSzTR1fyk0Xw code：qgda 
+Download the weights and add them to the 'premodels' folder
 
-环境配置在requirement.txt中，可能需要再补充个别包
-使用python3.8，torch 1.12.1 torchvision 0.13.1 torchaudio 0.12.1+cu113
+The environment configuration is in requirement.txt and may need to be supplemented with some packages
+use python3.8, torch 1.12.1 torchvision 0.13.1 torchaudio 0.12.1+cu113
 
-当准备工作完成之后，需要修改main中的root_path，将DAD数据集所在目录地址替换即可
+After preparations are complete, change the 'root_path' in main ArgumentParser and replace the address of the directory where the DAD data set resides
 
-修改view可以训练4种不同视图
+Modify the 'view' to train 4 different views
 
-batch_size可根据自身设备进行设置，默认的bs是效果最好的参数配置
+'batch_size' can be set according to your own devices, the default batch_size is the best parameter configuration
 
-device可以根据自身配置设置，支持多卡训练
+'device' can be configured according to their own Settings, support multi-gpu training
 
-其他参数可以不需要调整
+Other main ArgumentParser do not need to be adjusted
 
 # Train model
-最后使用 python main.py 即可训练
+you can use 'python main.py' to train
 
 # Test model
-我已经将计算好的score上传，因此不需要权重以及数据集就可以进行test
+I've uploaded the calculated score, so you don't need weights or datasets to test
+just use 'python main.py --mode test' 
 
-使用 python main.py --mode test
 # Acknowledgement
-非常感谢 https://github.com/okankop/Driver-Anomaly-Detection 的开源，我的代码解决了源代码中内存溢出的问题，也增加了部分log内容
+Thanks for open source of 'https://github.com/okankop/Driver-Anomaly-Detection', my code to solve the problems of memory in the source code
