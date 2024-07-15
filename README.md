@@ -1,5 +1,5 @@
 # DCC_Driving_Anomaly_Detection-
-Code for Paper: “Dual-stream Model Combining Spatio-Temporal and Appearance Features for Anomaly Driving Action Detection”
+Code for Paper: “DSTANet: Learning a Dual-Stream Model for Anomaly Driving Action Detection Using Spatio-Temporal and Appearance Features”
 
 The DAD dataset used in this work：https://pan.baidu.com/s/1qVAXj82gkw82hbyb3kDoCg code：8hgs 
 （There may be an error during unzip. Please record the corresponding error image, copy and rename the adjacent image to replace it. There are about 4 wrong images）
